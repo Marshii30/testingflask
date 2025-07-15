@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles4.css') }}">
+</head>
+<body>
+   <div class="container">
+       <h1 class="title">Register</h1>
+ 
+       <form action="/register" method="POST">
+           <label for="username" class="label">Username</label>
+           <input
+               type="text"
+               id="username"
+               name="username"
+               required
+               class="input-field"
+               minlength="4"
+               maxlength="20"
+               pattern="^[a-zA-Z0-9_]+$"
+               title="Username must be 4-20 characters long and contain only letters, numbers, and underscores.">
+ 
+           <label for="password" class="label">Password</label>
+           <input
+               type="password"
+               id="password"
+               name="password"
+               required
+               class="input-field"
+               minlength="3"
+               maxlength="32"
+             
+               title="Password must be 8-32 characters long, include at least one uppercase letter, one lowercase letter, one number, and one special character.">
+ 
+           <button type="submit" class="submit-btn">Register</button>
+       </form>
+ 
+       <div class="footer">
+           <a href="{{ url_for('index') }}" style="display: inline-block; padding: 10px 20px; margin: 10px 0; font-size: 16px; color: #fff; background-color: #28a745; text-decoration: none; border-radius: 5px; border: none; text-align: center; cursor: pointer;">
+               Home
+           </a>
+       </div>
+   </div>
+</body>
+</html>

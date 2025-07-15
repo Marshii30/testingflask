@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Add Review</title>
+</head>
+<body>
+ <h2>Add Movie Review</h2>
+ <form action="/add_review" method="POST">
+   <label>Movie Name:</label>
+   <input type="text" name="movie_name" required><br><br>
+ 
+   <label>Your Name:</label>
+   <input type="text" name="reviewer" required><br><br>
+ 
+  <label>Rating (1 to 5):</label>
+ <input type="number" name="rating" min="1" max="5" required><br><br>
+ 
+   <label>Review:</label>
+   <textarea name="review" required></textarea><br><br>
+ 
+   <button type="submit">Submit Review</button>
+ </form>
+</body>
+</html>
