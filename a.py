@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import mysql.connector
-imprt os
+import os
 from werkzeug.security import generate_password_hash
 from flask import Flask, render_template, request, redirect, url_for, flash
 
