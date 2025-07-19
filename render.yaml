@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: testingflask
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn main:app
